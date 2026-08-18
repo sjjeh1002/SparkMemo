@@ -20,17 +20,17 @@
 
 | 文件 | 说明 |
 |---|---|
-| `SparkMemo-Windows-x64-v1.2.0.zip` | Windows 64 位绿色版,解压即用 |
-| `SparkMemo-Android-v1.2.0.apk` | Android 安装包(Android 7.0+),含 arm64-v8a / armeabi-v7a / x86_64 |
+| `SparkMemo-Windows-x64-v1.2.1.zip` | Windows 64 位绿色版,解压即用 |
+| `SparkMemo-Android-v1.2.1.apk` | Android 安装包(Android 7.0+),含 arm64-v8a / armeabi-v7a / x86_64 |
 
 ## 🚀 快速开始
 
 **Windows**
-1. 解压 `SparkMemo-Windows-x64-v1.2.0.zip` 到任意目录
+1. 解压 `SparkMemo-Windows-x64-v1.2.1.zip` 到任意目录
 2. 双击 `smart_study.exe` 即可运行(无需安装)
 
 **Android**
-1. 安装 `SparkMemo-Android-v1.2.0.apk`(如提示「未知来源」,请在系统设置中允许本次安装)
+1. 安装 `SparkMemo-Android-v1.2.1.apk`(如提示「未知来源」,请在系统设置中允许本次安装)
 2. 如与旧版本冲突,请先卸载旧版再安装
 
 **配置 AI(可选,强烈推荐)**
@@ -71,6 +71,11 @@
 - 数据格式开放(SQLite),支持 Excel/PDF 导出、数据库级备份,随时可迁移
 
 ## 🏷 版本历史
+
+**v1.2.1(2026-08-18)**
+- **PDF 提取引擎升级为 pdfium(pdfrx)**:Syncfusion 提取为空时自动用 pdfium 二次提取,解决无 ToUnicode 的中文 PDF 提取失败/只有页码的问题(开源引擎,提取率远超商业库)
+- 仍空再走 OCR(Android ML Kit / Windows Tesseract)
+- 版本号更新为 v1.2.1(versionCode 5)
 
 **v1.2.0(2026-08-18)**
 - **内置 OCR**:扫描件/图片型 PDF 自动识别文字——Android 用 Google ML Kit 中文识别(离线、高精度),Windows 随包内置 Tesseract(chi_sim+eng);PDF 无文本层时自动渲染页面 → OCR → 导入笔记
