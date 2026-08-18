@@ -1,15 +1,15 @@
-## SparkMemo v1.0.1 正式版
+## SparkMemo v1.1.0 正式版
 
 ### 更新内容
 
-- **修复 Android 网络功能**:补齐 `INTERNET` 权限(此前 release 包缺少该权限,导致「获取模型 / 测试连接 / AI 调用 / 局域网同步」全部失败)
-- **新增存储访问授权弹窗**:首次启动说明用途(笔记导入 / 背景图 / 数据备份)→ 请求系统权限;拒绝后引导至系统设置开启;仅首次自动询问,已授权不再打扰
-- 版本号更新为 v1.0.1(versionCode 2)
+- **修复 PDF 导入闪退**:全链路异常防护,解析失败给出明确提示而不再崩溃(Android 低内存设备 OOM 防护:超过 80MB / 500 页直接拒绝并提示)
+- **修复 PDF 导入内容错乱**:提取为空时明确提示「未提取到文本(可能为扫描件/图片型 PDF,或字体无文本映射)」,不再静默产出"只有页码"的无效内容;单页失败不中断整篇
+- 版本号更新为 v1.1.0(versionCode 3)
 
 ### 安装
 
-- **Windows**:解压 `SparkMemo-Windows-x64-v1.0.1.zip`,双击 `smart_study.exe`
-- **Android**:安装 `SparkMemo-Android-v1.0.1.apk`(Android 7.0+);与旧版本冲突时请先卸载旧版再安装
+- **Windows**:解压 `SparkMemo-Windows-x64-v1.1.0.zip`,双击 `smart_study.exe`
+- **Android**:安装 `SparkMemo-Android-v1.1.0.apk`(Android 7.0+);与旧版本冲突时请先卸载旧版再安装
 
 ### AI 配置(可选)
 

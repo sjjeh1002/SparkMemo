@@ -20,17 +20,17 @@
 
 | 文件 | 说明 |
 |---|---|
-| `SparkMemo-Windows-x64-v1.0.1.zip` | Windows 64 位绿色版,解压即用 |
-| `SparkMemo-Android-v1.0.1.apk` | Android 安装包(Android 7.0+),含 arm64-v8a / armeabi-v7a / x86_64 |
+| `SparkMemo-Windows-x64-v1.1.0.zip` | Windows 64 位绿色版,解压即用 |
+| `SparkMemo-Android-v1.1.0.apk` | Android 安装包(Android 7.0+),含 arm64-v8a / armeabi-v7a / x86_64 |
 
 ## 🚀 快速开始
 
 **Windows**
-1. 解压 `SparkMemo-Windows-x64-v1.0.1.zip` 到任意目录
+1. 解压 `SparkMemo-Windows-x64-v1.1.0.zip` 到任意目录
 2. 双击 `smart_study.exe` 即可运行(无需安装)
 
 **Android**
-1. 安装 `SparkMemo-Android-v1.0.1.apk`(如提示「未知来源」,请在系统设置中允许本次安装)
+1. 安装 `SparkMemo-Android-v1.1.0.apk`(如提示「未知来源」,请在系统设置中允许本次安装)
 2. 如与旧版本冲突,请先卸载旧版再安装
 
 **配置 AI(可选,强烈推荐)**
@@ -71,6 +71,10 @@
 - 数据格式开放(SQLite),支持 Excel/PDF 导出、数据库级备份,随时可迁移
 
 ## 🏷 版本历史
+
+**v1.1.0(2026-08-18)**
+- 修复 PDF 导入:全链路异常防护(不再闪退)+ 超大文件/超多页数限制 + 空结果明确提示(扫描件/图片型 PDF 不再静默产出"只有页码"的无效内容)
+- 版本号更新为 v1.1.0(versionCode 3)
 
 **v1.0.1(2026-08-18)**
 - 修复 Android 网络功能:补齐 INTERNET 权限(此前 release 包「获取模型/测试连接/AI 调用」全部失败)
