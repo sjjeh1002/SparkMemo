@@ -1,4 +1,4 @@
-# SmartMemo 智能记忆学习助手
+﻿# SparkMemo 智能记忆学习助手
 
 > 本地优先 · FSRS-5 间隔重复 · AI 全链路 · Windows + Android 双平台
 
@@ -16,21 +16,21 @@
 
 ## 📦 下载
 
-前往 **[Releases](https://github.com/sjjeh1002/SmartMemo/releases)** 页面下载最新版本:
+前往 **[Releases](https://github.com/sjjeh1002/SparkMemo/releases)** 页面下载最新版本:
 
 | 文件 | 说明 |
 |---|---|
-| `SmartMemo-Windows-x64-v1.0.0.zip` | Windows 64 位绿色版,解压即用 |
-| `SmartMemo-Android-v1.0.0.apk` | Android 安装包(Android 7.0+),含 arm64-v8a / armeabi-v7a / x86_64 |
+| `SparkMemo-Windows-x64-v1.0.0.zip` | Windows 64 位绿色版,解压即用 |
+| `SparkMemo-Android-v1.0.0.apk` | Android 安装包(Android 7.0+),含 arm64-v8a / armeabi-v7a / x86_64 |
 
 ## 🚀 快速开始
 
 **Windows**
-1. 解压 `SmartMemo-Windows-x64-v1.0.0.zip` 到任意目录
+1. 解压 `SparkMemo-Windows-x64-v1.0.0.zip` 到任意目录
 2. 双击 `smart_study.exe` 即可运行(无需安装)
 
 **Android**
-1. 安装 `SmartMemo-Android-v1.0.0.apk`(如提示「未知来源」,请在系统设置中允许本次安装)
+1. 安装 `SparkMemo-Android-v1.0.0.apk`(如提示「未知来源」,请在系统设置中允许本次安装)
 2. 如与旧版本冲突,请先卸载旧版再安装
 
 **配置 AI(可选,强烈推荐)**
@@ -40,8 +40,8 @@
 
 ## 📖 文档
 
-- [SmartMemo 使用说明](SmartMemo使用说明.txt) — 安装 / AI 配置 / 全功能指南 / 数据备份 / 常见问题
-- [SmartMemo 产品优势](SmartMemo产品优势.txt) — 竞品对比 / 模型自由 / 数据自主 / 加固说明
+- [SparkMemo 使用说明](SparkMemo使用说明.txt) — 安装 / AI 配置 / 全功能指南 / 数据备份 / 常见问题
+- [SparkMemo 产品优势](SparkMemo产品优势.txt) — 竞品对比 / 模型自由 / 数据自主 / 加固说明
 
 ## 🛠 功能一览
 

@@ -1,4 +1,4 @@
-## SmartMemo v1.0.0 正式版
+﻿## SparkMemo v1.0.0 正式版
 
 智能记忆学习助手:FSRS-5 间隔重复算法 + AI 全链路(制卡 / 出题 / 反思 / 计划 / 助手 / 定制),本地优先,Windows + Android 双平台。
 
@@ -14,8 +14,8 @@
 
 ### 安装
 
-- **Windows**:解压 `SmartMemo-Windows-x64-v1.0.0.zip`,双击 `smart_study.exe`
-- **Android**:安装 `SmartMemo-Android-v1.0.0.apk`(Android 7.0+);与旧版冲突时请先卸载旧版
+- **Windows**:解压 `SparkMemo-Windows-x64-v1.0.0.zip`,双击 `smart_study.exe`
+- **Android**:安装 `SparkMemo-Android-v1.0.0.apk`(Android 7.0+);与旧版冲突时请先卸载旧版
 
 ### AI 配置(可选)
 
