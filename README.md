@@ -1,4 +1,4 @@
-﻿# SparkMemo 智能记忆学习助手
+# SparkMemo 智能记忆学习助手
 
 > 本地优先 · FSRS-5 间隔重复 · AI 全链路 · Windows + Android 双平台
 
@@ -20,17 +20,17 @@
 
 | 文件 | 说明 |
 |---|---|
-| `SparkMemo-Windows-x64-v1.0.0.zip` | Windows 64 位绿色版,解压即用 |
-| `SparkMemo-Android-v1.0.0.apk` | Android 安装包(Android 7.0+),含 arm64-v8a / armeabi-v7a / x86_64 |
+| `SparkMemo-Windows-x64-v1.0.1.zip` | Windows 64 位绿色版,解压即用 |
+| `SparkMemo-Android-v1.0.1.apk` | Android 安装包(Android 7.0+),含 arm64-v8a / armeabi-v7a / x86_64 |
 
 ## 🚀 快速开始
 
 **Windows**
-1. 解压 `SparkMemo-Windows-x64-v1.0.0.zip` 到任意目录
+1. 解压 `SparkMemo-Windows-x64-v1.0.1.zip` 到任意目录
 2. 双击 `smart_study.exe` 即可运行(无需安装)
 
 **Android**
-1. 安装 `SparkMemo-Android-v1.0.0.apk`(如提示「未知来源」,请在系统设置中允许本次安装)
+1. 安装 `SparkMemo-Android-v1.0.1.apk`(如提示「未知来源」,请在系统设置中允许本次安装)
 2. 如与旧版本冲突,请先卸载旧版再安装
 
 **配置 AI(可选,强烈推荐)**
@@ -71,6 +71,11 @@
 - 数据格式开放(SQLite),支持 Excel/PDF 导出、数据库级备份,随时可迁移
 
 ## 🏷 版本历史
+
+**v1.0.1(2026-08-18)**
+- 修复 Android 网络功能:补齐 INTERNET 权限(此前 release 包「获取模型/测试连接/AI 调用」全部失败)
+- 新增存储访问授权弹窗:首次启动说明用途(笔记导入/背景图/备份)→ 请求系统权限,被拒后引导至系统设置
+- 版本号更新为 v1.0.1(versionCode 2)
 
 **v1.0.0(2026-08-18)**
 - AI 制卡 / 出题不设数量上限:内容驱动、多轮并行、失败自动重试

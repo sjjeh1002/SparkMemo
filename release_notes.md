@@ -1,21 +1,15 @@
-﻿## SparkMemo v1.0.0 正式版
-
-智能记忆学习助手:FSRS-5 间隔重复算法 + AI 全链路(制卡 / 出题 / 反思 / 计划 / 助手 / 定制),本地优先,Windows + Android 双平台。
+## SparkMemo v1.0.1 正式版
 
 ### 更新内容
 
-- AI 制卡 / 出题**不设数量上限**:内容驱动、多轮并行、失败自动重试
-- AI 生成卡片可导入到**已有 / 新建卡片组**
-- 计划驱动新卡,新卡完成数真实累计,每日限额按日递减
-- 修复:复习完成页「再来一轮」崩溃、同步基线退化、同步页初始化健壮性
-- 设置页每日新卡上限交互重构(滑块 5–1000 + 输入框 1–99999999 + 一键不限)
-- 统计 / 反思页实时刷新;周度 AI 分析持久化
-- 安全加固:Release AOT + Dart 符号混淆 + Android R8 + DWARF 剥离 + 构建路径脱敏
+- **修复 Android 网络功能**:补齐 `INTERNET` 权限(此前 release 包缺少该权限,导致「获取模型 / 测试连接 / AI 调用 / 局域网同步」全部失败)
+- **新增存储访问授权弹窗**:首次启动说明用途(笔记导入 / 背景图 / 数据备份)→ 请求系统权限;拒绝后引导至系统设置开启;仅首次自动询问,已授权不再打扰
+- 版本号更新为 v1.0.1(versionCode 2)
 
 ### 安装
 
-- **Windows**:解压 `SparkMemo-Windows-x64-v1.0.0.zip`,双击 `smart_study.exe`
-- **Android**:安装 `SparkMemo-Android-v1.0.0.apk`(Android 7.0+);与旧版冲突时请先卸载旧版
+- **Windows**:解压 `SparkMemo-Windows-x64-v1.0.1.zip`,双击 `smart_study.exe`
+- **Android**:安装 `SparkMemo-Android-v1.0.1.apk`(Android 7.0+);与旧版本冲突时请先卸载旧版再安装
 
 ### AI 配置(可选)
 
