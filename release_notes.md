@@ -1,15 +1,20 @@
-## SparkMemo v1.1.0 正式版
+## SparkMemo v1.2.0 正式版
 
 ### 更新内容
 
-- **修复 PDF 导入闪退**:全链路异常防护,解析失败给出明确提示而不再崩溃(Android 低内存设备 OOM 防护:超过 80MB / 500 页直接拒绝并提示)
-- **修复 PDF 导入内容错乱**:提取为空时明确提示「未提取到文本(可能为扫描件/图片型 PDF,或字体无文本映射)」,不再静默产出"只有页码"的无效内容;单页失败不中断整篇
-- 版本号更新为 v1.1.0(versionCode 3)
+- **内置 OCR(双平台)**:
+  - 扫描件 / 图片型 PDF 现在会自动识别文字:PDF 无文本层时自动逐页渲染 → OCR → 导入笔记
+  - Android:Google ML Kit 中文文本识别(模型随包,完全离线,印刷体精度高)
+  - Windows:随包内置 Tesseract 5.4 + 中文语言包(chi_sim+eng,离线)
+- PDF 导入全链路异常防护,超大文件 / 超多页数限制
+- 版本号更新为 v1.2.0(versionCode 4)
+
+> 说明:OCR 针对印刷体扫描件效果最佳;手写内容识别率有限。Windows 安装包因内置 OCR 引擎体积增大属正常。
 
 ### 安装
 
-- **Windows**:解压 `SparkMemo-Windows-x64-v1.1.0.zip`,双击 `smart_study.exe`
-- **Android**:安装 `SparkMemo-Android-v1.1.0.apk`(Android 7.0+);与旧版本冲突时请先卸载旧版再安装
+- **Windows**:解压 `SparkMemo-Windows-x64-v1.2.0.zip`,双击 `smart_study.exe`(内置 OCR 组件,解压后请勿单独删除 tesseract.exe / pdfium.dll / tessdata 目录)
+- **Android**:安装 `SparkMemo-Android-v1.2.0.apk`(Android 7.0+);与旧版本冲突时请先卸载旧版再安装
 
 ### AI 配置(可选)
 
