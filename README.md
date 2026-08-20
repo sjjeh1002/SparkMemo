@@ -20,17 +20,17 @@
 
 | 文件 | 说明 |
 |---|---|
-| `SparkMemo-Windows-x64-v2.0.0.zip` | Windows 64 位绿色版,解压即用 |
-| `SparkMemo-Android-v2.0.0.apk` | Android 安装包(Android 7.0+),含 arm64-v8a / armeabi-v7a / x86_64 |
+| `SparkMemo-Windows-x64-v2.1.0.zip` | Windows 64 位绿色版,解压即用 |
+| `SparkMemo-Android-v2.1.0.apk` | Android 安装包(Android 7.0+),含 arm64-v8a / armeabi-v7a / x86_64 |
 
 ## 🚀 快速开始
 
 **Windows**
-1. 解压 `SparkMemo-Windows-x64-v2.0.0.zip` 到任意目录
+1. 解压 `SparkMemo-Windows-x64-v2.1.0.zip` 到任意目录
 2. 双击 `smart_study.exe` 即可运行(无需安装)
 
 **Android**
-1. 安装 `SparkMemo-Android-v2.0.0.apk`(如提示「未知来源」,请在系统设置中允许本次安装)
+1. 安装 `SparkMemo-Android-v2.1.0.apk`(如提示「未知来源」,请在系统设置中允许本次安装)
 2. 如与旧版本冲突,请先卸载旧版再安装
 
 **配置 AI(可选,强烈推荐)**
@@ -71,6 +71,13 @@
 - 数据格式开放(SQLite),支持 Excel/PDF 导出、数据库级备份,随时可迁移
 
 ## 🏷 版本历史
+
+**v2.1.0(测试版,2026-08-18)**
+- **AI 权限扩大(读全部数据 + 动态修改)**:新增 7 个工具——读取全部应用数据(get_all_data:设置/卡片/笔记/反思/计划/统计/成就/插件)、修改卡片(update_card/delete_card)、修改笔记(update_note/delete_note)、保存反思(save_reflection)、设置计划(update_plan);工具总数 16 个
+- **移除 AI 自动反思与 AI 自动计划**(默认不再自动触发;反思页手动 AI 反思、计划页手动「AI 调整本周」保留)
+- **任务编排默认 FSRS 算法**;「AI 辅助编排计划」改为设置中手动开启(默认关),开启后复习结束 AI 根据**本周反思内容 + 卡片知识点分布**调整本周计划
+- **复习策略按 FSRS 官方规范核对**(fsrs4anki wiki):FSRS-5 21 参数、retention 0.9、四档评分映射、遗忘曲线与状态机全部一致
+- 版本号更新为 v2.1.0(versionCode 7)
 
 **v2.0.0(测试版,2026-08-18)**
 - **AI 助手升级为 DSH 风格 agent**(借鉴 DeepSeek Harness 开源架构):原生 function calling 多轮循环,可真正操作软件本身——
