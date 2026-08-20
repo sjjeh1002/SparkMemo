@@ -20,19 +20,19 @@
 
 | 文件 | 说明 |
 |---|---|
-| `SparkMemo-Windows-x64-v2.2.2.zip` | Windows 64 位绿色版,解压即用(测试版) |
-| `SparkMemo-Android-v2.2.2.apk` | Android 安装包(Android 7.0+),含 arm64-v8a / armeabi-v7a / x86_64(测试版) |
+| `SparkMemo-Windows-x64-v2.2.3.zip` | Windows 64 位绿色版,解压即用(测试版) |
+| `SparkMemo-Android-v2.2.3.apk` | Android 安装包(Android 7.0+),含 arm64-v8a / armeabi-v7a / x86_64(测试版) |
 | `SparkMemo-Windows-x64-v2.2.1.zip` | Windows 64 位正式版 |
 | `SparkMemo-Android-v2.2.1.apk` | Android 正式版 |
 
 ## 🚀 快速开始
 
 **Windows**
-1. 解压 `SparkMemo-Windows-x64-v2.2.2.zip` 到任意目录
+1. 解压 `SparkMemo-Windows-x64-v2.2.3.zip` 到任意目录
 2. 双击 `smart_study.exe` 即可运行(无需安装)
 
 **Android**
-1. 安装 `SparkMemo-Android-v2.2.2.apk`(如提示「未知来源」,请在系统设置中允许本次安装)
+1. 安装 `SparkMemo-Android-v2.2.3.apk`(如提示「未知来源」,请在系统设置中允许本次安装)
 2. 如与旧版本冲突,请先卸载旧版再安装
 
 **配置 AI(可选,强烈推荐)**
@@ -73,6 +73,11 @@
 - 数据格式开放(SQLite),支持 Excel/PDF 导出、数据库级备份,随时可迁移
 
 ## 🏷 版本历史
+
+**v2.2.3(测试版,2026-08-20)**
+- **笔记页说明**:空状态提示「导入笔记可体验 AI 总结和 AI 制卡;PDF 格式报错时可自行转为 txt 等格式再导入」
+- **卡片库页说明**:空状态提示右上角分别为「AI 出题」和「导出」
+- 版本号更新为 v2.2.3(versionCode 11)
 
 **v2.2.2(测试版,2026-08-20)**
 - **AI 反思草稿防丢失**:草稿跨天未处理时,下次自动反思 / 手动 AI 反思前会**先自动保存为当天正式反思记录**,再生成新草稿(目标日期已有记录则不重复);应用 / 丢弃草稿后同步清除记录
