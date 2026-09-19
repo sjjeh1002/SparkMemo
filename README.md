@@ -6,12 +6,12 @@
 
 ## 下载公开版
 
-当前版本：**v2.3.2（公开版，预发布）**。前往 [GitHub Releases](https://github.com/sjjeh1002/SparkMemo/releases/tag/v2.3.2) 下载。
+当前版本：**v2.3.3（公开版，预发布）**。前往 [GitHub Releases](https://github.com/sjjeh1002/SparkMemo/releases/tag/v2.3.3) 下载。
 
 | 文件 | 用途 |
 |---|---|
-| `SparkMemo-Public-Windows-x64-v2.3.2.zip` | Windows x64 公开版，已混淆；解压运行 `smart_study.exe` |
-| `SparkMemo-Public-Android-v2.3.2.apk` | Android 7.0+ 公开版，已加固；**已通过一台 Android 16 真机覆盖安装与冷启动验证** |
+| `SparkMemo-Public-Windows-x64-v2.3.3.zip` | Windows x64 公开版，已混淆；解压运行 `smart_study.exe` |
+| `SparkMemo-Public-Android-v2.3.3.apk` | Android 7.0+ 公开版，已加固；**Android 16 真机覆盖安装成功，公开包冷启动待补验** |
 
 Windows 包自带 PDFium、Tesseract 和中英文字库。Android 包包含 arm64-v8a / armeabi-v7a / x86_64。
 
@@ -21,22 +21,22 @@ Windows 包自带 PDFium、Tesseract 和中英文字库。Android 包包含 arm6
 
 | 区别 | 公开版（Public） | 开发版（Development） |
 |---|---|---|
-| 分发位置 | GitHub Releases | 本地开发交付目录 |
+| 分发位置 | 公开仓库 GitHub Releases | 本地与私有开发仓库 |
 | 随包源码 | 不附带 | 包含对应源码、测试与构建脚本 |
 | Dart 混淆 | 开启 | 关闭 |
 | Android R8 / 手工加固流程 | 开启 | 关闭 / 不执行 |
 | 用途 | 日常使用与公开测试 | 修改、调试与继续开发 |
 
-开发版不上传 GitHub Releases。公开版只分发运行程序和必要运行依赖，不包含开发源码、调试符号或登录凭据。
+开发源码和未加固开发版仅存放在本地及经核验为 PRIVATE 的开发仓库，不上传本公开仓库。公开版只分发运行程序和必要运行依赖，不包含开发源码、调试符号或登录凭据。
 
 **说明：**“公开版不附带源码”指 Release 附件；本仓库目前仍是公开仓库，GitHub 自动生成的 Source code 归档与仓库内已有代码仍然可见，不是最新本地开发版交付包。
 
 ## 主要功能
 
-**v2.3.2 功能与算法修复版已发布**：377 项测试通过，静态检查 0 error、13 warning、97 info，双端公开/开发版构建成功。修复每日新卡额度、重复评分、计划进度、代码判题、跨日反思及 OCR 异步清理问题。2026-09-18 已在一台 Android 16 实体手机完成加固 APK 覆盖安装、冷启动和 ChatGPT 入口跳转检查。新增网页辅助制卡仍需用户手动发送、复制和确认导入，不是自动调用手机 ChatGPT App；未验收账号登录或完整 AI 回答往返。详见 [v2.3.2 发布说明与 SHA-256](https://github.com/sjjeh1002/SparkMemo/releases/tag/v2.3.2)。仅上传公开运行包，当前开发源码仍留本地。
+**v2.3.3 制卡、难度与综合出题优化版**：396 项测试通过，静态检查 0 error、13 warning、99 info。AI 制卡按带原文证据的知识清单分批生成、补齐遗漏；题目难度支持 6、10、12 及更高等级，超难题保留完整，不强拆、不压成 5；适当结合相关知识点并保留主次知识点信息。Windows 启动检查通过；加固 APK 已于 2026-09-18 在 Android 16 真机覆盖安装成功，公开包冷启动待补验，不沿用开发版的结果。详见 [v2.3.3 发布说明与 SHA-256](https://github.com/sjjeh1002/SparkMemo/releases/tag/v2.3.3)。AI 清单覆盖和语义难度仍需人工核对，测试通过不代表模型永不出错。
 
 - **FSRS-6 科学复习：**21 参数，默认保持率 90%；支持同日短期复习、每日新卡上限、到期队列与四档评分。
-- **理工科智能学习：**区分记忆/推理知识点，支持 10 种题型、1–5 级难度、提示、错误诊断、变式练习和独立知识点掌握度。
+- **理工科智能学习：**区分记忆/推理知识点，支持 10 种题型、可扩展正整数难度（含 6 级以上）、提示、错误诊断、变式练习和独立知识点掌握度。题目等级与 FSRS 记忆难度独立。
 - **自动判题：**本地规则优先，复杂回答可调用 AI；AI 异常时保守回退。保留高级手动 FSRS 模式。
 - **离线示例：**内置 16 道 Python/高数训练题，不需要联网，不执行用户代码。
 - **笔记与卡片：**常见文档导入、PDF 文本提取与 OCR、AI 总结/制卡、标签卡组、Markdown/代码高亮/LaTeX。
