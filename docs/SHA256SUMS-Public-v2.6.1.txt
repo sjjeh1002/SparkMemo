@@ -1,0 +1,2 @@
+f5094980323308b7347c4655c9fabbecca4858fb2549da57df6ac36b583d3b69  SparkMemo-Public-Windows-x64-v2.6.1.zip
+d8b50b5ed2028444a6dfa8f7f80d167f313a4f2e278bc58636311f9d755c4809  SparkMemo-Public-Android-v2.6.1.apk
