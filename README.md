@@ -6,12 +6,12 @@
 
 ## 下载公开版
 
-当前版本：**v2.3.3（公开版，预发布）**。前往 [GitHub Releases](https://github.com/sjjeh1002/SparkMemo/releases/tag/v2.3.3) 下载。
+当前版本：**v2.5.1（公开版，预发布）**。前往 [GitHub Releases](https://github.com/sjjeh1002/SparkMemo/releases/tag/v2.5.1) 下载。
 
 | 文件 | 用途 |
 |---|---|
-| `SparkMemo-Public-Windows-x64-v2.3.3.zip` | Windows x64 公开版，已混淆；解压运行 `smart_study.exe` |
-| `SparkMemo-Public-Android-v2.3.3.apk` | Android 7.0+ 公开版，已加固；**Android 16 真机覆盖安装成功，公开包冷启动待补验** |
+| `SparkMemo-Public-Windows-x64-v2.5.1.zip` | Windows x64 公开版，已混淆；解压运行 `smart_study.exe` |
+| `SparkMemo-Public-Android-v2.5.1.apk` | Android 7.0+ 公开版，已加固；**Android 16 真机覆盖安装、冷启动通过** |
 
 Windows 包自带 PDFium、Tesseract 和中英文字库。Android 包包含 arm64-v8a / armeabi-v7a / x86_64。
 
@@ -32,6 +32,10 @@ Windows 包自带 PDFium、Tesseract 和中英文字库。Android 包包含 arm6
 **说明：**“公开版不附带源码”指 Release 附件；本仓库目前仍是公开仓库，GitHub 自动生成的 Source code 归档与仓库内已有代码仍然可见，不是最新本地开发版交付包。
 
 ## 主要功能
+
+**v2.5.1** 在 v2.5.0 基础上增加真正的草稿 SQL 分页、事务分批导入，并修复制卡任务时间戳撞号导致跨笔记草稿覆盖的风险。573 项测试通过；生成核心的流式续跑仍未完成。Android 加固包单台真机安装、冷启动通过，数学键盘等完整交互仍待真机验收。详见 [v2.5.1 验收与限制](docs/DEVELOPMENT_v2.5.1.md)。
+
+本地开发候选 **v2.5.0** 新增预期记忆、多级目录、统一三模式 AI 制卡和本科微积分输入层，并继续长文覆盖回归。它不是当前 GitHub 已发布公开版；Android 本版真机验收尚未完成。开发验收与限制见 [v2.5.0 记录](docs/DEVELOPMENT_v2.5.0.md)，使用方法见 [操作说明](docs/USAGE_v2.5.0.md)。
 
 **v2.3.3 制卡、难度与综合出题优化版**：396 项测试通过，静态检查 0 error、13 warning、99 info。AI 制卡按带原文证据的知识清单分批生成、补齐遗漏；题目难度支持 6、10、12 及更高等级，超难题保留完整，不强拆、不压成 5；适当结合相关知识点并保留主次知识点信息。Windows 启动检查通过；加固 APK 已于 2026-09-18 在 Android 16 真机覆盖安装成功，公开包冷启动待补验，不沿用开发版的结果。详见 [v2.3.3 发布说明与 SHA-256](https://github.com/sjjeh1002/SparkMemo/releases/tag/v2.3.3)。AI 清单覆盖和语义难度仍需人工核对，测试通过不代表模型永不出错。
 
