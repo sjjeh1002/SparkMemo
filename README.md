@@ -6,12 +6,12 @@
 
 ## 下载公开版
 
-当前版本：**v2.6.1（公开版，预发布）**。前往 [GitHub Releases](https://github.com/sjjeh1002/SparkMemo/releases/tag/v2.6.1) 下载。
+当前版本：**v2.6.3（公开版，预发布）**。前往 [GitHub Releases](https://github.com/sjjeh1002/SparkMemo/releases/tag/v2.6.3) 下载。
 
 | 文件 | 用途 |
 |---|---|
-| `SparkMemo-Public-Windows-x64-v2.6.1.zip` | Windows x64 公开版，已混淆；解压运行 `smart_study.exe` |
-| `SparkMemo-Public-Android-v2.6.1.apk` | Android 7.0+ 公开版，已加固；安装验证详见发布说明 |
+| `SparkMemo-Public-Windows-x64-v2.6.3.zip` | Windows x64 公开版，已混淆；解压运行 `smart_study.exe` |
+| `SparkMemo-Public-Android-v2.6.3.apk` | Android 7.0+ 公开版，已加固；安装验证详见发布说明 |
 
 Windows 包自带 PDFium、Tesseract 和中英文字库。Android 包包含 arm64-v8a / armeabi-v7a / x86_64。
 
@@ -32,6 +32,8 @@ Windows 包自带 PDFium、Tesseract 和中英文字库。Android 包包含 arm6
 **说明：**GitHub 自动生成的 Source code 归档对应此公开说明仓库的内容，不是应用开发版源码包。最新应用源码与未加固开发版仅存放在私有开发仓库，不随公开版发布。
 
 ## 主要功能
+
+**v2.6.3**：修复 AI 制卡中分隔线与无效跳过建议导致的失败；过滤纯导入语、过渡语等低价值内容并保留原因。支持中断 AI 请求及草稿续跑，优化大 PDF 逐页识别、助手消息复制和文件夹分类界面。620 项测试通过，真实 Android 验证及边界见 [v2.6.3 发布说明](docs/RELEASE_v2.6.3.md)。
 
 **v2.6.1**：修复手机大 PDF 导入无响应退出的高风险路径：后台按文件逐页提取，离线 OCR 逐页释放图片，进度与取消；笔记首页直接多选图片/PDF；长正文分屏阅读；大图片/长正文分块读取 SQLite。保留 v2.6.0 的生成核心流式续跑、独立识图/出题模型、手写照片作答和出题纠错。596 项全量测试通过，详细真机回归及限制见 [v2.6.1 发布说明](docs/RELEASE_v2.6.1.md)。v2.6.0 公开发布因 Android 大 PDF 问题暂缓，未作为正式公开下载版本发布。
 
