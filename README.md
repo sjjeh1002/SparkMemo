@@ -1,21 +1,16 @@
 # SparkMemo 智能记忆学习助手
 
-> 本地优先 · FSRS-6 · 理工科智能学习 · Windows + Android
+> 本地优先 · FSRS-6 · 理工科智能学习 · Android
 
 把「笔记 → 卡片 → 作答 → 复习 → 反思」连接成学习闭环。学习数据保存在本机 SQLite，无需注册 SparkMemo 账号，无广告。基础学习功能可离线使用；使用云端 AI 时，相关内容会发送给所配置的服务。
 
 ## 下载公开版
 
-当前版本：**v2.6.3（公开版，预发布）**。前往 [GitHub Releases](https://github.com/sjjeh1002/SparkMemo/releases/tag/v2.6.3) 下载。
+当前版本：**v2.6.5（Android 公开版，预发布）**。前往 [GitHub Releases](https://github.com/sjjeh1002/SparkMemo/releases/tag/v2.6.5) 下载 `SparkMemo-Public-Android-v2.6.5.apk` 与 SHA-256 校验文件。
 
-| 文件 | 用途 |
-|---|---|
-| `SparkMemo-Public-Windows-x64-v2.6.3.zip` | Windows x64 公开版，已混淆；解压运行 `smart_study.exe` |
-| `SparkMemo-Public-Android-v2.6.3.apk` | Android 7.0+ 公开版，已加固；安装验证详见发布说明 |
+保留 Flutter / Dart，后续集中开发和验收 Android。从本版起停止新增 Windows 运行包；[v2.6.3 历史双平台下载](https://github.com/sjjeh1002/SparkMemo/releases/tag/v2.6.3) 保留。平台安排见 [Android 支持范围](docs/ANDROID_SUPPORT.md)。
 
-Windows 包自带 PDFium、Tesseract 和中英文字库。Android 包包含 arm64-v8a / armeabi-v7a / x86_64。
-
-升级前请备份学习数据。不要为解决安装冲突直接卸载旧版，卸载可能删除应用数据。APK 沿用项目 debug 签名，目前是预发布测试包；单台真机验证不代表所有机型、全部功能或长期稳定性均已验收。
+Android 7.0+，APK 包含 arm64-v8a / armeabi-v7a / x86_64。升级前请备份学习数据，覆盖安装保留已有数据。APK 沿用项目预发布签名；真机结果与验收边界见 [发布说明](docs/RELEASE_v2.6.5.md)。
 
 ## 公开版与开发版
 
@@ -33,6 +28,8 @@ Windows 包自带 PDFium、Tesseract 和中英文字库。Android 包包含 arm6
 
 ## 主要功能
 
+**v2.6.5（Android）**：制卡扩大批次、精简输出、仅补失败项，修复截断覆盖误判和共享卡进展判断，增加请求耗时及已保存数量。627 项测试通过，真机结果与限制见 [发布说明](docs/RELEASE_v2.6.5.md)。
+
 **v2.6.3**：修复 AI 制卡中分隔线与无效跳过建议导致的失败；过滤纯导入语、过渡语等低价值内容并保留原因。支持中断 AI 请求及草稿续跑，优化大 PDF 逐页识别、助手消息复制和文件夹分类界面。620 项测试通过，真实 Android 验证及边界见 [v2.6.3 发布说明](docs/RELEASE_v2.6.3.md)。
 
 **v2.6.1**：修复手机大 PDF 导入无响应退出的高风险路径：后台按文件逐页提取，离线 OCR 逐页释放图片，进度与取消；笔记首页直接多选图片/PDF；长正文分屏阅读；大图片/长正文分块读取 SQLite。保留 v2.6.0 的生成核心流式续跑、独立识图/出题模型、手写照片作答和出题纠错。596 项全量测试通过，详细真机回归及限制见 [v2.6.1 发布说明](docs/RELEASE_v2.6.1.md)。v2.6.0 公开发布因 Android 大 PDF 问题暂缓，未作为正式公开下载版本发布。
@@ -48,7 +45,7 @@ Windows 包自带 PDFium、Tesseract 和中英文字库。Android 包包含 arm6
 - **自动判题：**本地规则优先，复杂回答可调用 AI；AI 异常时保守回退。保留高级手动 FSRS 模式。
 - **离线示例：**内置 16 道 Python/高数训练题，不需要联网，不执行用户代码。
 - **笔记与卡片：**常见文档导入、PDF 文本提取与 OCR、AI 总结/制卡、标签卡组、Markdown/代码高亮/LaTeX。
-- **AI 接入：**Windows 支持 Codex CLI + ChatGPT 登录，并明确选择模型；也支持 OpenAI 兼容接口与 Anthropic。图片生成使用独立配置。
+- **AI 接入：**Android 支持 OpenAI 兼容接口与 Anthropic；Codex CLI 登录功能保留于历史 Windows 代码。图片生成使用独立配置。
 - **学习辅助：**反思、统计、计划、成就、局域网同步和插件。AI 计划只调整学习配额，不修改 FSRS 权重。
 
 ## v2.3.1：FSRS-6 对齐
@@ -71,9 +68,9 @@ Windows 包自带 PDFium、Tesseract 和中英文字库。Android 包包含 arm6
 
 ## 快速使用
 
-1. Windows 解压公开版运行；Android 备份数据后安装公开版 APK，建议先用少量卡片确认本机兼容性。
+1. 备份数据后覆盖安装 Android 公开版 APK，先用少量卡片确认本机兼容性。
 2. 在首页体验内置训练，或导入笔记、添加卡片。
-3. AI 可选：Windows 在「设置 → AI 模型配置」选择 Codex 并登录 ChatGPT；其他服务按需配置地址、密钥与模型。
+3. AI 可选：在「设置 → AI 模型配置」配置所用服务的地址、密钥与模型。
 4. 使用「开始今天的学习」作答；需要传统翻卡评分时，在设置开启手动 FSRS。
 5. 定期备份本地数据库。
 
