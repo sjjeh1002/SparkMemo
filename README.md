@@ -6,11 +6,9 @@
 
 ## 下载公开版
 
-当前版本：**v2.6.5（Android 公开版，预发布）**。前往 [GitHub Releases](https://github.com/sjjeh1002/SparkMemo/releases/tag/v2.6.5) 下载 `SparkMemo-Public-Android-v2.6.5.apk` 与 SHA-256 校验文件。
+当前版本：**v2.6.6（Android 公开版，预发布）**。前往 [GitHub Releases](https://github.com/sjjeh1002/SparkMemo/releases/tag/v2.6.6) 下载 `SparkMemo-Public-Android-v2.6.6.apk` 与 SHA-256 校验文件。
 
-保留 Flutter / Dart，后续集中开发和验收 Android。从本版起停止新增 Windows 运行包；[v2.6.3 历史双平台下载](https://github.com/sjjeh1002/SparkMemo/releases/tag/v2.6.3) 保留。平台安排见 [Android 支持范围](docs/ANDROID_SUPPORT.md)。
-
-Android 7.0+，APK 包含 arm64-v8a / armeabi-v7a / x86_64。升级前请备份学习数据，覆盖安装保留已有数据。APK 沿用项目预发布签名；真机结果与验收边界见 [发布说明](docs/RELEASE_v2.6.5.md)。
+Android 7.0+，包含 arm64-v8a / armeabi-v7a / x86_64。备份后覆盖安装可保留数据。后续仅开发、构建和发布 Android；历史 Windows 下载保留。详见 [发布说明](docs/RELEASE_v2.6.6.md) 和 [平台支持](docs/ANDROID_SUPPORT.md)。
 
 ## 公开版与开发版
 
@@ -27,6 +25,8 @@ Android 7.0+，APK 包含 arm64-v8a / armeabi-v7a / x86_64。升级前请备份�
 **说明：**GitHub 自动生成的 Source code 归档对应此公开说明仓库的内容，不是应用开发版源码包。最新应用源码与未加固开发版仅存放在私有开发仓库，不随公开版发布。
 
 ## 主要功能
+
+**v2.6.6（Android）**：统一中文与数学排版、文件夹与常用导航；拍照仅识别手写，简答和解答题全部 AI 判题，待核对不记错；制卡与变式采用合适的多种题型。实测结果见 [发布说明](docs/RELEASE_v2.6.6.md)。
 
 **v2.6.5（Android）**：制卡扩大批次、精简输出、仅补失败项，修复截断覆盖误判和共享卡进展判断，增加请求耗时及已保存数量。627 项测试通过，真机结果与限制见 [发布说明](docs/RELEASE_v2.6.5.md)。
 
@@ -70,7 +70,7 @@ Android 7.0+，APK 包含 arm64-v8a / armeabi-v7a / x86_64。升级前请备份�
 
 1. 备份数据后覆盖安装 Android 公开版 APK，先用少量卡片确认本机兼容性。
 2. 在首页体验内置训练，或导入笔记、添加卡片。
-3. AI 可选：在「设置 → AI 模型配置」配置所用服务的地址、密钥与模型。
+3. 简答及开放解答需要 AI：在「更多 → 设置」配置独立出题 / 判题模型；识图配置独立保存。客观卡可本地评分。
 4. 使用「开始今天的学习」作答；需要传统翻卡评分时，在设置开启手动 FSRS。
 5. 定期备份本地数据库。
 
