@@ -6,9 +6,9 @@
 
 ## 下载公开版
 
-当前版本：**v2.6.6（Android 公开版，预发布）**。前往 [GitHub Releases](https://github.com/sjjeh1002/SparkMemo/releases/tag/v2.6.6) 下载 `SparkMemo-Public-Android-v2.6.6.apk` 与 SHA-256 校验文件。
+当前版本：**v2.6.7（Android 公开版，预发布）**。前往 [GitHub Releases](https://github.com/sjjeh1002/SparkMemo/releases/tag/v2.6.7) 下载 `SparkMemo-Public-Android-v2.6.7.apk` 和 SHA-256 文件。
 
-Android 7.0+，包含 arm64-v8a / armeabi-v7a / x86_64。备份后覆盖安装可保留数据。后续仅开发、构建和发布 Android；历史 Windows 下载保留。详见 [发布说明](docs/RELEASE_v2.6.6.md) 和 [平台支持](docs/ANDROID_SUPPORT.md)。
+Android 7.0+，包含 arm64-v8a / armeabi-v7a / x86_64。覆盖安装可保留数据。后续仅开发和发布 Android，历史 Windows 下载保留。详见 [发布说明](docs/RELEASE_v2.6.7.md)。
 
 ## 公开版与开发版
 
@@ -26,7 +26,7 @@ Android 7.0+，包含 arm64-v8a / armeabi-v7a / x86_64。备份后覆盖安装�
 
 ## 主要功能
 
-**v2.6.6（Android）**：统一中文与数学排版、文件夹与常用导航；拍照仅识别手写，简答和解答题全部 AI 判题，待核对不记错；制卡与变式采用合适的多种题型。实测结果见 [发布说明](docs/RELEASE_v2.6.6.md)。
+**v2.6.7（Android）**：修复文件夹移动与保存，增加明确确认、路径和批量操作；文件夹及标签模式完整加载卡片，不再每次只显示100张。见 [发布说明](docs/RELEASE_v2.6.7.md)。
 
 **v2.6.5（Android）**：制卡扩大批次、精简输出、仅补失败项，修复截断覆盖误判和共享卡进展判断，增加请求耗时及已保存数量。627 项测试通过，真机结果与限制见 [发布说明](docs/RELEASE_v2.6.5.md)。
 
@@ -42,7 +42,7 @@ Android 7.0+，包含 arm64-v8a / armeabi-v7a / x86_64。备份后覆盖安装�
 
 - **FSRS-6 科学复习：**21 参数，默认保持率 90%；支持同日短期复习、每日新卡上限、到期队列与四档评分。
 - **理工科智能学习：**区分记忆/推理知识点，支持 10 种题型、可扩展正整数难度（含 6 级以上）、提示、错误诊断、变式练习和独立知识点掌握度。题目等级与 FSRS 记忆难度独立。
-- **自动判题：**本地规则优先，复杂回答可调用 AI；AI 异常时保守回退。保留高级手动 FSRS 模式。
+- **自动判题：**简答及开放解答统一 AI 判题，客观题可本地评分。缺少配置、请求异常或结果不确定时保留待核对，不记复习成绩。保留高级手动 FSRS 模式。
 - **离线示例：**内置 16 道 Python/高数训练题，不需要联网，不执行用户代码。
 - **笔记与卡片：**常见文档导入、PDF 文本提取与 OCR、AI 总结/制卡、标签卡组、Markdown/代码高亮/LaTeX。
 - **AI 接入：**Android 支持 OpenAI 兼容接口与 Anthropic；Codex CLI 登录功能保留于历史 Windows 代码。图片生成使用独立配置。
